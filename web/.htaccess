@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+
+  Header set X-Frame-Options ALLOW
+  Header append X-Frame-Options: "ALLOW-FROM http://localhost"
+  Header append X-Frame-Options: "ALLOW-FROM https://cf.codefuse.org/admin/"
+
+</IfModule>

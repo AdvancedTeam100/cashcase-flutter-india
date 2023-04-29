@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/" />
+
+  <meta charset="UTF-8" />
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+  <meta name="description" content="A new Flutter project." />
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Cashfuse" />
+  <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Cashfuse</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <!-- Croppie -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
+  <meta name="google-signin-client_id"
+    content="521109211624-ln8pkat50bo50nvm7qn35nhmv5t9p8fi.apps.googleusercontent.com">
+</head>
+
+<body>
+  <div class="center">
+    <img src="webLogo.png" alt="" />
+    <div class="parent">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyB29Rl1IKWA-sTP-gHvlrN7scS7hO4Mp4s",
+      authDomain: "cashfuse-60939.firebaseapp.com",
+      projectId: "cashfuse-60939",
+      storageBucket: "cashfuse-60939.appspot.com",
+      messagingSenderId: "521109211624",
+      appId: "1:521109211624:web:1f3cec9c3cbbfea4c53c5d",
+      measurementId: "G-KBPRBBZRYC",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("firebase-messaging-sw.js");
+      });
+
+      window.addEventListener("flutter-first-frame", function () {
+        navigator.serviceWorker.register("flutter_service_worker.js");
+      });
+    }
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+  <script type="text/javascript">
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.worker.min.js";
+  </script>
+
+  <script type="text/javascript">
+    let useHtml = true;
+    if (useHtml) {
+      window.flutterWebRenderer = "html";
+    } else {
+      window.flutterWebRenderer = "canvaskit";
+    }
+  </script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "521109211624",
+    "project_id": "cashfuse-60939",
+    "storage_bucket": "cashfuse-60939.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521109211624:android:73898e9cbfabc8e4c53c5d",
+        "android_client_info": {
+          "package_name": "com.cashfuse.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521109211624-62evm82p8opmhmdos1j0id192hfnhkoo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cashfuse.app",
+            "certificate_hash": "a0c043a53cfaae18772d6e004bdc5c30a526492f"
+          }
+        },
+        {
+          "client_id": "521109211624-b46rqpf7a68e227r8k0rur1gb5f5uaim.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cashfuse.app",
+            "certificate_hash": "fdd456e1cdf249d2ef3e9a09806313514123daf1"
+          }
+        },
+        {
+          "client_id": "521109211624-ht7a2ge4jl36jp2efmc3nsgoprnu8btc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuGP6eCEJW5mGHvk4YoCOoXz6TiKxKJSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521109211624-ht7a2ge4jl36jp2efmc3nsgoprnu8btc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
